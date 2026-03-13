@@ -1,1 +1,39 @@
-# 
+git checkout -b feature/leitura-diaria
+git add .
+git commit -m "feat: implementar leitura diária"
+git push origin feature/NOME
+git checkout main
+git pull origin main
+git checkout feature/NOME
+git merge main
+git checkout main
+git merge feature/favoritos
+git push origin main
+git branch -d feature/NOME
+git checkout -b feature/pesquisa-versiculos
+# (agora você cria a tela e implementa a lógica)
+git add .
+git commit -m "feat: implementar pesquisa de versículos"
+git push origin feature/pesquisa-versiculos
+
+# depois que terminar e testar:
+git checkout main
+git merge feature/pesquisa-versiculos
+git push origin main
+
+# opcional: deletar a branch
+git branch -d feature/pesquisa-versiculos
+git push origin --delete feature/pesquisa-versiculos
+/src
+  /screens
+    Home.js
+    LeituraDiaria.js
+    PesquisaVersiculos.js
+    ChatBiblico.js
+    Favoritos.js
+  /components
+    VersiculoCard.js
+    Header.js
+    Footer.js
+  App.js
+  index.html
