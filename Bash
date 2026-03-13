@@ -50,3 +50,5 @@ node_modules/
 dist/
 *.log
 .env
+git add .
+git commit -m "Initial commit: setup do app da Bíblia"
