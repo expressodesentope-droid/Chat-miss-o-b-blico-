@@ -37,3 +37,16 @@ git push origin --delete feature/pesquisa-versiculos
     Footer.js
   App.js
   index.html
+git add .
+git commit -m "Initial commit: setup do app da Bíblia"
+git branch -M main
+git push -u origin main
+git checkout -b feature/leitura-diaria
+# Trabalhar na feature
+git add .
+git commit -m "feat: implementar leitura diária"
+git push origin feature/leitura-diaria
+node_modules/
+dist/
+*.log
+.env
