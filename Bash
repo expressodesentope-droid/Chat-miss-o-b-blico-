@@ -52,3 +52,34 @@ dist/
 .env
 git add .
 git commit -m "Initial commit: setup do app da Bíblia"
+#!/bin/bash
+
+# --- Configurações ---
+USERNAME="SeuUsuarioGitHub"    # Substitua pelo seu usuário do GitHub
+REPO="chat-missao-biblico"     # Nome do repositório que você criou no GitHub
+
+# --- Inicializar Git ---
+echo "Inicializando Git..."
+git init
+
+# --- Criar branch principal ---
+echo "Criando branch main..."
+git branch -M main
+
+# --- Adicionar todos os arquivos ---
+echo "Adicionando arquivos..."
+git add .
+
+# --- Commit inicial ---
+echo "Fazendo commit inicial..."
+git commit -m "Initial commit: setup do app da Bíblia"
+
+# --- Conectar ao GitHub ---
+echo "Conectando ao repositório remoto..."
+git remote add origin https://github.com/$USERNAME/$REPO.git
+
+# --- Push inicial ---
+echo "Enviando para GitHub..."
+git push -u origin main
+
+echo "✅ Seu app foi publicado no GitHub com sucesso!"
